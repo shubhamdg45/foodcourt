@@ -77,6 +77,32 @@ Edit Recipe: Open a recipe → click Edit, update the form, and Save.
 
 Delete Recipe: Open a recipe → click Delete → confirm deletion.
 
+## Data Structure in localStorage
+
+Recipes are stored in localStorage under the key recipes as a JSON array of objects.
+
+```
+
+[
+  {
+    "id": 1699999999999,
+    "title": "Paneer Masala",
+    "description": "A flavorful paneer masala cooked using Indian spices.",
+    "ingredients": [
+      "200g paneer",
+      "1 onion",
+      "1 tomato"
+    ],
+    "steps": [
+      "Chop onion, tomato, chili, coriander.",
+      "Cut paneer into cubes."
+    ],
+    "prep": 30,
+    "difficulty": "Medium",
+    "image": "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg"
+  }
+]
+```
 ### Assumptions and Limitations
 
 Recipes are stored only in localStorage, so they are browser-specific.
