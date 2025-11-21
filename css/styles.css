@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #fafafa;
   color: #333;
@@ -101,29 +101,28 @@ label {
   display: block;
 }
 
-
 /* ====== Responsive Styles ====== */
 
 /* For screens smaller than 768px (tablet & mobile) */
 @media (max-width: 768px) {
   .nav {
-    display: none;           /* hide nav by default */
+    display: none; /* hide nav by default */
     flex-direction: column;
     background-color: #ff704d;
     width: 100%;
   }
 
   .nav.active {
-    display: flex;           /* show nav when active */
+    display: flex; /* show nav when active */
   }
 
   .menu-icon {
-    display: block;          /* show hamburger menu */
+    display: block; /* show hamburger menu */
     cursor: pointer;
   }
 
   .controls {
-    flex-direction: column;  /* stack search/filter vertically */
+    flex-direction: column; /* stack search/filter vertically */
     gap: 10px;
   }
 }
@@ -131,11 +130,17 @@ label {
 /* For very small screens (<500px) */
 @media (max-width: 500px) {
   .card img {
-    height: 150px;           /* smaller card images */
+    height: 150px; /* smaller card images */
   }
 
   #recipeForm,
   #recipeDetail {
-    padding: 15px;           /* reduce padding for small screens */
+    padding: 15px; /* reduce padding for small screens */
   }
+}
+
+.main-content {
+  padding: 25px;
+  min-height: calc(100vh - 140px);
+  box-sizing: border-box;
 }

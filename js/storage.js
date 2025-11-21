@@ -26,22 +26,29 @@ function initStorage() {
           "1/2 cup water"
         ],
         steps: [
-          "Chop onion, tomato, chili, coriander.",
-          "Cut paneer into cubes.",
-          "Heat oil in a deep pan.",
-          "Add onions and sauté until golden.",
-          "Add ginger-garlic paste and sauté 1 minute.",
-          "Add tomatoes & cook until mushy.",
-          "Add all powdered spices and mix well.",
-          "Add paneer cubes and gently mix.",
-          "Add water & cream and simmer 5–7 mins.",
-          "Turn off flame and garnish with coriander.",
-          "Serve hot with roti or rice."
+          "Turn on gas stove and set flame to medium",
+          "Place cooking pot on stove and wait 5 seconds to warm",
+          "Add 15 ml oil into pot and wait 10 seconds to heat",
+          "Add 1–2 g cumin seeds and wait until they crackle",
+          "Add 60–70 g chopped onion and stir until light brown",
+          "Add 8 ml ginger-garlic paste and stir for 30 seconds",
+          "Add 100 ml tomato puree and cook until oil separates",
+          "Add 1 g turmeric powder, 2 g red chili powder, 2 g coriander powder, 2–3 g salt and mix well",
+          "Cook spice mixture for 2 minutes",
+          "Add 30 ml cashew paste and stir, cook for 1 minute",
+          "Add 120 ml water and mix until smooth, simmer for 3–4 minutes",
+          "Add 150–180 g paneer cubes and stir gently",
+          "Add 2 g garam masala and 1 g crushed kasuri methi, stir lightly",
+          "Add 30 ml fresh cream and mix slowly",
+          "Turn off gas stove",
+          "Transfer paneer masala to serving bowl",
+          "Garnish with coriander leaves if available",
+          "Serve hot"
         ],
         prep: 30,
         difficulty: "Medium",
         image:
-          "https://images.pexels.com/photos/5127316/pexels-photo-5127316.jpeg"
+          "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg"
       },
 
       {
@@ -107,7 +114,7 @@ function initStorage() {
         prep: 40,
         difficulty: "Medium",
         image:
-          "https://images.pexels.com/photos/9609842/pexels-photo-9609842.jpeg"
+          "https://images.pexels.com/photos/33709312/pexels-photo-33709312.jpeg"
       }
     ];
 

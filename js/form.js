@@ -54,3 +54,9 @@ form.addEventListener("submit", (e) => {
 
   location.href = "index.html";
 });
+
+document.getElementById("cancelBtn").addEventListener("click", () => {
+  if (confirm("Discard changes and go back?")) {
+    location.href = "index.html";
+  }
+});
