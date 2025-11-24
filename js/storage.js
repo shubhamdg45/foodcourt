@@ -42,13 +42,12 @@ function initStorage() {
           "Add 30 ml fresh cream and mix slowly",
           "Turn off gas stove",
           "Transfer paneer masala to serving bowl",
-          "Garnish with coriander leaves if available",
+          "Garnish with coriander leaves",
           "Serve hot"
         ],
         prep: 30,
         difficulty: "Medium",
-        image:
-          "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg"
+        image: "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg"
       },
 
       {
@@ -70,16 +69,16 @@ function initStorage() {
           "1/2 cup water"
         ],
         steps: [
-          "Chop onion, tomato, carrot, chili.",
-          "Heat oil in a pan.",
-          "Sauté onions for 2 mins.",
-          "Add veggies and cook 2 mins.",
-          "Add turmeric, chili powder, salt.",
-          "Add water and bring to boil.",
-          "Add Maggi noodles (broken).",
-          "Add tastemaker and mix.",
-          "Cook 2–3 mins until soft.",
-          "Serve hot."
+          "Chop onion, tomato, carrot, chili",
+          "Heat oil in a pan",
+          "Sauté onions for 2 mins",
+          "Add veggies and cook 2 mins",
+          "Add turmeric, chili powder, salt",
+          "Add water and bring to boil",
+          "Add Maggi noodles (broken)",
+          "Add tastemaker and mix",
+          "Cook 2–3 mins until soft",
+          "Serve hot"
         ],
         prep: 15,
         difficulty: "Easy",
@@ -101,20 +100,19 @@ function initStorage() {
           "Salt & pepper to taste"
         ],
         steps: [
-          "Knead dough with flour, salt, and water.",
-          "Heat oil and sauté ginger-garlic paste.",
-          "Add chopped veggies and cook 5 minutes.",
-          "Add soy sauce, salt, and pepper.",
-          "Roll dough into small circles.",
-          "Fill with veggie mixture.",
-          "Fold and shape momos.",
-          "Steam for 10–12 minutes.",
-          "Serve hot with momo chutney."
+          "Knead dough with flour, salt, and water",
+          "Heat oil and sauté ginger-garlic paste",
+          "Add chopped veggies and cook 5 minutes",
+          "Add soy sauce, salt, and pepper",
+          "Roll dough into small circles",
+          "Fill with veggie mixture",
+          "Fold and shape momos",
+          "Steam for 10–12 minutes",
+          "Serve hot with momo chutney"
         ],
         prep: 40,
         difficulty: "Medium",
-        image:
-          "https://images.pexels.com/photos/33709312/pexels-photo-33709312.jpeg"
+        image: "https://images.pexels.com/photos/33709312/pexels-photo-33709312.jpeg"
       }
     ];
 

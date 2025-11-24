@@ -10,10 +10,11 @@
   <body>
     <header class="header">
       <div class="logo">🍛 Recipe Manager</div>
-      <nav class="nav">
+      <nav class="nav" id="navMenu">
         <a href="index.html">Home</a>
-        <a href="form.html">Add Recipe</a>
+        <a href="form.html" class="add-btn">Add Recipe</a>
       </nav>
+      <div class="theme-toggle" id="themeToggle">🌙</div>
       <div class="menu-icon" id="menuToggle">☰</div>
     </header>
 
@@ -27,10 +28,19 @@
           <option value="Medium">Medium</option>
           <option value="Hard">Hard</option>
         </select>
+
+        <select id="preptimeFilter">
+          <option value="all">All Prep Time</option>
+          <option value="15">Up to 15 min</option>
+          <option value="30">Up to 30 min</option>
+          <option value="60">Up to 60 min</option>
+        </select>
+
       </div>
 
       <div id="recipeGrid" class="recipe-grid"></div>
     </main>
+    <div id="toast"></div> <!-- Toast notification container -->
 
     <footer class="footer">
       <p>© 2025 Recipe Manager — Made with ❤️</p>

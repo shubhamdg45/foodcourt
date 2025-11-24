@@ -1,4 +1,4 @@
-/* Reset & global styles */
+/* ===== Reset & Global Styles ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,78 +10,12 @@ body {
   line-height: 1.6;
   background-color: #fafafa;
   color: #333;
+  transition: background 0.3s, color 0.3s;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ff704d;
-  padding: 10px 20px;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav a {
-  margin-left: 15px;
-  font-weight: 500;
-  transition: opacity 0.3s;
-}
-
-.nav a:hover {
-  opacity: 0.8;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* Footer */
-.footer {
-  background-color: #ff704d;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 30px;
-}
-
-/* Buttons */
-button,
-.btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ff704d;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
-
-button:hover,
-.btn:hover {
-  background-color: #e65c3c;
-}
-
-.main-content {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
 }
 
 input,
@@ -93,6 +27,15 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff704d;
+  box-shadow: 0 0 5px rgba(255,112,77,0.5);
+  outline: none;
 }
 
 label {
@@ -101,46 +44,286 @@ label {
   display: block;
 }
 
-/* ====== Responsive Styles ====== */
+/* ===== Header ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff704d, #ff6b6b);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-/* For screens smaller than 768px (tablet & mobile) */
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ===== Nav ===== */
+.nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav a {
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: linear-gradient(90deg, #ff704d, #ff6b6b);
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* ===== Buttons ===== */
+button,
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff704d;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #e65c3c;
+  transform: scale(1.05);
+}
+
+.btn-view {
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: 2px solid #ff704d;
+  background: transparent;
+  color: #ff704d;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  width: fit-content;
+}
+
+.btn-view:hover {
+  background: #ff704d;
+  color: white;
+  letter-spacing: 1px;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 112, 77, 0.4);
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: calc(100vh - 140px);
+  box-sizing: border-box;
+}
+
+/* ===== Recipe Cards ===== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  margin-bottom: 8px;
+  color: #ff704d;
+}
+
+.card-content p {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-content small {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+/* ===== Controls (Search / Filter) ===== */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ===== Toast Notifications ===== */
+#toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff704d;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Scroll Reveal ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Dark Mode ===== */
+body.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark .header,
+body.dark .footer,
+body.dark .nav {
+  background-color: #e65c3c;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #2b2b2b;
+  color: #fff;
+  border-color: #555;
+}
+
+/* ===== Theme Toggle ===== */
+.theme-toggle {
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2) rotate(20deg);
+}
+
+/* ===== Responsive Styles ===== */
 @media (max-width: 768px) {
   .nav {
-    display: none; /* hide nav by default */
+    position: fixed;
+    top: 60px;
+    right: -250px;
+    width: 250px;
+    height: calc(100% - 60px);
+    background: linear-gradient(#ec4747,#ff704d);
     flex-direction: column;
-    background-color: #ff704d;
-    width: 100%;
+    gap: 15px;
+    padding-top: 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
   }
 
   .nav.active {
-    display: flex; /* show nav when active */
+    right: 0;
+  }
+
+  .nav a {
+    padding: 12px 20px;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
   }
 
   .menu-icon {
-    display: block; /* show hamburger menu */
-    cursor: pointer;
+    display: block;
   }
 
   .controls {
-    flex-direction: column; /* stack search/filter vertically */
-    gap: 10px;
+    flex-direction: column;
   }
 }
 
-/* For very small screens (<500px) */
 @media (max-width: 500px) {
   .card img {
-    height: 150px; /* smaller card images */
+    height: 150px;
   }
 
   #recipeForm,
   #recipeDetail {
-    padding: 15px; /* reduce padding for small screens */
+    padding: 15px;
   }
 }
 
-.main-content {
-  padding: 25px;
-  min-height: calc(100vh - 140px);
-  box-sizing: border-box;
+.card {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
