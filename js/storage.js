@@ -47,7 +47,7 @@ function initStorage() {
         ],
         prep: 30,
         difficulty: "Medium",
-        image: "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg"
+        image: "https://images.pexels.com/photos/5127316/pexels-photo-5127316.jpeg"
       },
 
       {
