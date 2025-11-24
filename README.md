@@ -1,4 +1,4 @@
-#  Recipe Manager
+#  Recipe Manager-Shubham
 
 A **responsive and interactive web application** to manage your favorite recipes. Users can **add, edit, delete, view, and search recipes** with ease. This project uses **HTML, CSS, JavaScript, and localStorage** to persist data.
 
@@ -141,8 +141,4 @@ Made with  using JavaScript, HTML, and CSS
 
 ---
 
-✅ This README now **includes step-by-step instructions to run the app**, both by opening `index.html` directly and using a local server.  
 
-If you want, I can also **add screenshots of Home, Form, and Detail pages inside the README**—this makes it **more visually appealing for assessment submissions**.  
-
-Do you want me to add screenshots as well?
