@@ -35,3 +35,7 @@ function removeRecipe() {
     location.href = "index.html";
   }
 }
+ //Added functionality of back button
+document.getElementById("backButton").addEventListener("click", () => {
+  window.history.back();
+});
